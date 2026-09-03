@@ -11,7 +11,7 @@ public class Main {
 
         EstudianteDAO dao = new EstudianteDAO();
 
-        dao.registroEstudiante();
+        dao.crearTabla();
 
         dao.insertar(
                 new Estudiante(

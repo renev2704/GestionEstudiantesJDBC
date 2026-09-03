@@ -10,7 +10,7 @@ import java.util.List;
 
 public class EstudianteDAO {
 
-    public void registroEstudiante() {
+    public void crearTabla() {
 
         String sql = """
                 CREATE TABLE IF NOT EXISTS estudiante(
