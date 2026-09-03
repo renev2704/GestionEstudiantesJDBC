@@ -6,11 +6,11 @@ Sistema de gestión de estudiantes para la UTEC - Proyecto JDBC con H2 Database
 
 ## Integrantes
 
-| Nombre | Carnet |
-|--------|--------|
-| [Nombre Estudiante 1] | [Carnet] |
-| [Nombre Estudiante 2] | [Carnet] |
-| [Nombre Estudiante 3] | [Carnet] |
+| Nombre                            | Carnet     |
+|-----------------------------------|------------|
+| RENÉ DANIEL VENTURA SIBRIAN       | 2704172025 |
+| NELSON EDUARDO RAMÍREZ RAMÍREZ    | 2526102024 |
+| ALEJANDRA CAROLINA GUILLEN CAMPOS | 2715172025 |
 
 ---
 
