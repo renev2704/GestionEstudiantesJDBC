@@ -1,45 +1,57 @@
 package sv.edu.utec.modelo;
 
-
 public class Estudiante {
 
+    // atributos
     private int id;
     private String nombre;
+    private String apellidos;
     private String carrera;
-    private double promedio;
+    private String carnet;
+    private String correo;
+    private String telefono;
 
-    public Estudiante(int id, String nombre, String carrera, double promedio) {
+    // Constructor vacío
+    public Estudiante() {}
+
+    // Constructor con todos los atributos
+    public Estudiante(int id, String nombre, String apellidos, String carrera,
+                      String carnet, String correo, String telefono) {
         this.id = id;
         this.nombre = nombre;
+        this.apellidos = apellidos;
         this.carrera = carrera;
-        this.promedio = promedio;
+        this.carnet = carnet;
+        this.correo = correo;
+        this.telefono = telefono;
     }
 
-    public int getId() {
-        return id;
-    }
+    // Getters y Setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
 
-    public String getNombre() {
-        return nombre;
-    }
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
 
-    public String getCarrera() {
-        return carrera;
-    }
+    public String getApellidos() { return apellidos; }
+    public void setApellidos(String apellidos) { this.apellidos = apellidos; }
 
-    public double getPromedio() {
-        return promedio;
-    }
+    public String getCarrera() { return carrera; }
+    public void setCarrera(String carrera) { this.carrera = carrera; }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+    public String getCarnet() { return carnet; }
+    public void setCarnet(String carnet) { this.carnet = carnet; }
 
-    public void setCarrera(String carrera) {
-        this.carrera = carrera;
-    }
+    public String getCorreo() { return correo; }
+    public void setCorreo(String correo) { this.correo = correo; }
 
-    public void setPromedio(double promedio) {
-        this.promedio = promedio;
+    public String getTelefono() { return telefono; }
+    public void setTelefono(String telefono) { this.telefono = telefono; }
+
+    // metodo toString para mostrar información
+    @Override
+    public String toString() {
+        return String.format("ID: %d | %s %s | Carnet: %s | %s | Tel: %s",
+                id, nombre, apellidos, carnet, carrera, telefono);
     }
 }
