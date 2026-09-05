@@ -2,7 +2,6 @@ package sv.edu.utec.modelo;
 
 public class Estudiante {
 
-    // atributos
     private int id;
     private String nombre;
     private String apellidos;
@@ -11,10 +10,9 @@ public class Estudiante {
     private String correo;
     private String telefono;
 
-    // Constructor vacío
-    public Estudiante() {}
+    public Estudiante() {
+    }
 
-    // Constructor con todos los atributos
     public Estudiante(int id, String nombre, String apellidos, String carrera,
                       String carnet, String correo, String telefono) {
         this.id = id;
@@ -26,7 +24,6 @@ public class Estudiante {
         this.telefono = telefono;
     }
 
-    // Getters y Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 
@@ -47,11 +44,4 @@ public class Estudiante {
 
     public String getTelefono() { return telefono; }
     public void setTelefono(String telefono) { this.telefono = telefono; }
-
-    // metodo toString para mostrar información
-    @Override
-    public String toString() {
-        return String.format("ID: %d | %s %s | Carnet: %s | %s | Tel: %s",
-                id, nombre, apellidos, carnet, carrera, telefono);
-    }
 }
